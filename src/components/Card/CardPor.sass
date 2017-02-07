@@ -1,0 +1,97 @@
+@import 'src/global/variables.sass'
+
+.card-wrapper-por
+  position: relative
+  display: block
+  margin: -6px  auto
+  height: 100%
+  cursor: pointer
+
+.card-por
+  height: calc((100vh - 50px) / 7)
+  max-width: 100%
+  margin: 0 auto
+  position: relative
+  overflow: hidden
+  width: 95vw
+  background: $white
+  transition: all 0.2s ease-in-out
+
+.card-number-por
+  display: inline-block
+  position: relative
+  margin: 0 3% 0 7%
+  line-height: calc((100vh - 30px) / 7)
+
+  font-size: 10vh
+  user-select: none
+.card-active
+  color: $pink
+  transition: color .3s ease-in-out
+
+.stroke
+  height: 30vh
+
+.card-pinkbar-por
+  display: none
+  position: absolute
+  top: 50%
+  left: -20%
+  width: 150%
+  height: 5%
+  background-color: $pink
+  // transform: rotate(22deg)
+  box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.4)
+  animation: cardBottom .4s cubic-bezier(0.25, 0.46, 0.45, 0.94), grow .4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+
+
+.card-color-bottom-por
+  position: absolute
+  top: 50%
+  left: 5px
+  height: 80%
+  width: 2%
+  background: $pink
+  transform: translateY(-50%)
+  animation: cardBottom .4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+.card-bottom-text-por
+  display: inline-block
+  & .card-project-name-por
+    position: relative
+    display: block
+    margin:  0 auto
+    font-size: 3vh
+
+.card-link-outer-por
+  position: absolute
+  right: 5%
+  top: 50%
+  display: inline-block
+  transform: translateY(-50%)
+  text-align: center
+
+.next-svg-inactive-por
+  width: 7vw
+  opacity: .4
+
+// BUTTON
+.next-svg-por
+  width: 7vw
+  & .outer
+    animation: dash 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+    fill-opacity: 0
+    stroke-dasharray: 223px
+    stroke-dashoffset: 223
+  & .inner
+    animation: dash 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+    stroke-dasharray: 55.6px
+    stroke-dashoffset: 55.6
+
+@keyframes dash
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+    stroke-dashoffset: 0

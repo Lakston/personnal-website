@@ -1,0 +1,164 @@
+@import 'src/global/variables.sass'
+
+.card-wrapper
+  position: relative
+  display: inline-block
+  margin: 5vh auto
+  height: 100%
+  cursor: pointer
+
+.card
+  position: relative
+  overflow: hidden
+  margin: 0 -35px 0 0
+  max-width: 320px
+  max-height: 1250px
+  width: 14vw
+  height: 90vh
+  background: $white
+  transition: all 0.2s ease-in-out
+
+.card-number
+  position: relative
+  overflow: hidden
+  margin: 0 auto
+  padding-top: 15px
+  width: 100%
+  text-align: center
+  font-size: 17vw
+  font-family: $headerfont
+  user-select: none
+.card-active
+  color: $pink
+  transition: color .3s ease-in-out
+
+.card-pinkbar
+  position: absolute
+  top: 50%
+  left: -20%
+  width: 150%
+  height: 5%
+  background-color: $pink
+  // transform: rotate(22deg)
+  box-shadow: inset 0px 0px 19px 0px rgba(0,0,0,0.4)
+  animation: cardBottom .4s cubic-bezier(0.25, 0.46, 0.45, 0.94), grow .4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+
+
+.card-color-bottom
+  position: absolute
+  bottom: 0
+  width: 100%
+  height: 2.5%
+  border: 6px solid $white
+  background: $pink
+  animation: cardBottom .4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+@keyframes cardBottom
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.card-bottom-text
+  position: absolute
+  bottom: 2%
+  width: 100%
+  text-align: center
+  & .card-project-name
+    position: relative
+    display: block
+    margin:  0 auto
+    font-size: 2vw
+    &:after
+      position: absolute
+      bottom: -20%
+      left: 25%
+      width: 50%
+      height: 1px
+      background: $black
+      content: ''
+      opacity: .2
+
+.card-link-outer
+  margin: 3vh 0 2vh 0
+  text-align: center
+
+.next-svg-inactive
+  width: 4vw
+  opacity: .3
+
+// BUTTON
+.next-svg
+  width: 4vw
+  transition: transform .2s ease-in-out
+  & .outer
+    animation: dash .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+    fill-opacity: 0
+    stroke-dasharray: 223px
+    stroke-dashoffset: 223
+  & .inner
+    animation: dash .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+    stroke-dasharray: 55.6px
+    stroke-dashoffset: 55.6
+  &:hover
+    // opacity: .8
+    transform: scale(.9)
+
+@keyframes dash
+  to
+    stroke-dashoffset: 0
+
+// .card-glyph
+//   display: block
+//   margin: 30px auto
+//   width: 60%
+//   height: 100%
+
+//
+// .HjJuQnEN_0
+//   stroke-dasharray: 850
+//   stroke-dashoffset: 851
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+// .HjJuQnEN_1
+//   stroke-dasharray: 355
+//   stroke-dashoffset: 356
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+// .HjJuQnEN_2
+//   stroke-dasharray: 381
+//   stroke-dashoffset: 382
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+// .HjJuQnEN_3
+//   stroke-dasharray: 398
+//   stroke-dashoffset: 399
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+// .HjJuQnEN_4
+//   stroke-dasharray: 355 357
+//   stroke-dashoffset: 356
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+// .HjJuQnEN_5
+//   stroke-dasharray: 381
+//   stroke-dashoffset: 382
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+// .HjJuQnEN_6
+//   stroke-dasharray: 398
+//   stroke-dashoffset: 399
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+// .HjJuQnEN_7
+//   stroke-dasharray: 416
+//   stroke-dashoffset: 417
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+// .HjJuQnEN_8
+//   stroke-dasharray: 176
+//   stroke-dashoffset: 177
+//   animation: HjJuQnEN_draw .8s ease-in-out 0ms forwards
+//
+// @keyframes HjJuQnEN_draw
+//   100%
+//     stroke-dashoffset: 0
+// @keyframes HjJuQnEN_fade
+//   0%
+//     stroke-opacity: 1
+//   92%
+//     stroke-opacity: 1
+//   100%
+//     stroke-opacity: 0

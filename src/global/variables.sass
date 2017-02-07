@@ -1,0 +1,84 @@
+// Colors
+$white: #fafafa
+$black: #191919
+
+// $pink: #F74765
+$pink: #f63249
+// $pink: #FF1717
+// $darkblue: #333745
+$darkblue: #404e5c
+
+$lightgrey: rgba(230, 230, 230, 1)
+$grey: rgba(150, 150, 150, 1)
+$lightblack: rgba(40, 40, 40, 1)
+$raisinblack: #1e1e24
+
+$greytext: #73787d
+$blacktext: #606060
+
+//########
+// Fonts
+//########
+
+@import url('https://fonts.googleapis.com/css?family=Open Sans')
+@import url('https://fonts.googleapis.com/css?family=Questrial')
+
+$headerfont: 'Questrial', sans-serif
+$mainfont: 'Open Sans', sans-serif
+
+//########
+// Margins / Paddings
+//########
+$projectMarginBig: 75px
+$projectMarginMed: 34px
+
+$pagePaddings: 21px
+
+$menuSize: 50px
+
+//########
+// Mixins
+//########
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value)
+  @each $property in $properties
+    #{$property}: $min-value
+
+  @media screen and (min-width: $min-vw)
+    @each $property in $properties
+      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+
+  @media screen and (min-width: $max-vw)
+    @each $property in $properties
+      #{$property}: $max-value
+
+@function strip-unit($value)
+  @return $value / ($value * 0 + 1)
+
+
+// Animations
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes fadeOut
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+@keyframes swoopIn
+  0%
+    transform: translate3d(0, 40px, 0)
+  100%
+    transform: translate3d(0, 0, 0)
+
+@keyframes grow
+  0%
+    height: 0px
+    transform: scaleY(0.1) rotate(0deg)
+  100%
+    height: 10%
+    transform: scaleY(1) rotate(22deg)

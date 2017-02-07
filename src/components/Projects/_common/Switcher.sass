@@ -1,0 +1,76 @@
+@import 'src/global/variables.sass'
+
+.project-switcher
+  position: fixed
+  top: 0
+  right: 0
+  z-index: 10
+  width: $menuSize
+  height: 100vh
+  border-left: 1px solid $lightgrey
+  background: $white
+  text-align: center
+  overflow: hidden
+
+.project-switcher-title
+  color: $blacktext
+  text-transform: uppercase
+  white-space: nowrap
+  font-size: 13px
+  animation: fadeIn .4s ease-in-out forwards
+
+.project-switcher-title--container
+  position: absolute
+  top: calc(50% - 30px)
+  left: 50%
+  transform:  translateX(-50%) rotate(90deg)
+
+.project-switcher-btn
+  position: absolute
+  left: 50%
+  width: $menuSize
+  height: $menuSize
+  text-decoration: none
+  cursor: pointer
+  transform:  translateX(-50%)
+  @include fluid-type(font-size, 800px, 1366px, 14px, 16px)
+  transition: all .3s ease-in
+  &.next
+    bottom: $menuSize
+    border-top: 1px solid $lightgrey
+    &:hover
+      left: 60%
+  &.prev
+    bottom: 0
+    border-top: 1px solid $lightgrey
+    &:hover
+      left: 40%
+  &.close
+    top: 0
+    border-bottom: 1px solid $lightgrey
+    &:hover .cross1
+      transform: scale(0.5) translate(-50%, -50%)
+    &:hover .cross2
+      transform: scale(0.5) translate(-50%, -50%)
+
+
+.arrow
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 10px
+  transform: translate(-50%, -50%)
+
+.cross
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 22px
+  height: 2px
+  background: $black
+  transform-origin: left top 0px
+  transition: transform .15s ease-in
+  &.cross1
+    transform: rotate(45deg) translate(-50%, -50%)
+  &.cross2
+    transform: rotate(-45deg) translate(-50%, -50%)

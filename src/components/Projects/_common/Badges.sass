@@ -1,0 +1,40 @@
+@import 'src/global/variables.sass'
+
+//########
+// BADGES
+//########
+.project-badges
+  display: flex
+  text-align: left
+  opacity: 0
+  animation: swoopIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s forwards, fadeIn 1s cubic-bezier(0.39, 0.58, 0.57, 1) .2s forwards
+  flex-flow: row wrap
+  align-items: flex-start
+  margin-bottom: $projectMarginMed
+  & h6
+    padding-bottom: 3px
+
+
+.snap
+  margin: 0 21px 15px 0
+  color: $grey
+  text-transform: uppercase
+  letter-spacing: 1px
+
+.badge
+  display: inline-block
+  margin: 4px 5px 0 0
+  padding: 4px 5px
+  border-radius: 1px
+  background: $pink
+  color: $white
+  font-size: 10px
+  font-family: $mainfont
+
+.extlink
+  background: $darkblue
+  cursor: pointer
+
+#link
+  color: $white
+  text-decoration: none

@@ -1,0 +1,64 @@
+@import 'src/global/variables.sass'
+
+.project-switcherpor
+  position: fixed
+  bottom: 0
+  left: 0
+  z-index: 10
+  height: 40px
+  width: 100%
+  border-top: 1px solid $lightgrey
+  background: $white
+  text-align: center
+  overflow: hidden
+
+.project-switcherpor-title
+  color: $grey
+  text-transform: uppercase
+  white-space: nowrap
+  font-size: 13px
+  animation: fadeIn .4s ease-in-out forwards
+
+.project-switcherpor-title--container
+  position: absolute
+  top: 50%
+  left: 50%
+  transform:  translate(-50%, -50%)
+
+.project-switcherpor-btn
+  position: absolute
+  width: 40px
+  height: 40px
+  text-decoration: none
+  cursor: pointer
+  @include fluid-type(font-size, 800px, 1366px, 14px, 16px)
+  &.next
+    left: 40px
+    border-right: 1px solid $lightgrey
+    color: black
+  &.prev
+    left: 0
+    border-right: 1px solid $lightgrey
+  &.close
+    right: 0
+    border-left: 1px solid $lightgrey
+
+.arrow
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 10px
+  transform: translate(-50%, -50%)
+
+.cross
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 22px
+  height: 2px
+  background: black
+  transform-origin: left top 0px
+  &.cross1
+    transform: rotate(45deg) translate(-50%, -50%)
+  &.cross2
+    transform: rotate(-45deg) translate(-50%, -50%)

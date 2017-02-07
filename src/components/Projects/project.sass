@@ -1,0 +1,178 @@
+@import 'src/global/variables.sass'
+
+//########
+// PROJECT
+//########
+.project
+  position: absolute
+  top: 0
+  left: 0
+  min-height: 100vh
+  width: 100%
+  background: #f6f6f6
+  transition: opacity 1s ease-in-out
+
+.wrapper
+  margin: 0 auto
+  max-width: 1100px
+  width: 81%
+  background: #f6f6f6
+  &:last-child
+    padding-bottom: 70px
+  & p
+    margin: 0 0 $projectMarginMed 0
+    color: $blacktext
+    font-family: $mainfont
+    line-height: 1.8
+    @include fluid-type(font-size, 320px, 1000px, 16px, 18px)
+  & h2
+    @include fluid-type(font-size, 320px, 1000px, 19px, 24px)
+    margin: 0 0 $projectMarginMed 0
+    color: $black
+  & a
+    color: $black
+
+
+h3
+  text-align: center
+//########
+// TITLE
+//########
+.title
+  padding: 80px 0 $projectMarginMed 0
+  color: $black
+  font-family: $headerfont
+  opacity: 0
+  letter-spacing: 3px
+  transition: opacity .3s
+  animation: swoopIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards, fadeIn 1s cubic-bezier(0.39, 0.58, 0.57, 1) forwards
+  @include fluid-type(font-size, 320px, 1366px, 42px, 58px)
+
+//########
+// INTRO TEXT
+//########
+.section-first
+  opacity: 0
+  animation: swoopIn .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .3s forwards, fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) .3s forwards
+
+//########
+// IMAGES
+//########
+.project-ss
+  display: block
+  margin: 0 auto $projectMarginMed auto
+  width: 90%
+  opacity: 0
+  animation: swoopIn .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .4s forwards, fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) .4s forwards
+
+h2 img
+  width: 20px
+  vertical-align: baseline
+
+//########
+// TEXT
+//########
+.section-second
+  opacity: 0
+  animation: swoopIn .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .5s forwards, fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) .5s forwards
+.section-third
+  opacity: 0
+  animation: swoopIn .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .6s forwards, fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94).6s forwards
+.section-fourth
+  opacity: 0
+  animation: swoopIn .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .8s forwards, fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94).8s forwards
+
+.project h2
+  text-align: center
+
+//########
+// ABOUT
+//########
+.about-title
+  padding: 80px 0 10px 0
+  color: $pink
+  font-family: $headerfont
+  opacity: 0
+  letter-spacing: 3px
+  transition: opacity .3s
+  animation: swoopIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards, fadeIn 1s cubic-bezier(0.39, 0.58, 0.57, 1) forwards
+  @include fluid-type(font-size, 320px, 1366px, 42px, 58px)
+
+#pitch
+  margin-bottom: $projectMarginBig
+  @include fluid-type(font-size, 320px, 1000px, 25px, 32px)
+
+.links-wrap
+  position: relative
+  display: block
+  width: 100%
+  margin-bottom: $projectMarginBig
+
+.wrapper .contact
+  position: relative
+  display: block
+  height: 100%
+  font-size: 15px
+  color: $pink
+  text-decoration: none
+  text-align: right
+
+.email
+  color: $grey
+
+.brackets
+  display: inline-block
+  float: right
+  line-height: 30px
+
+.brackets a::before,
+.brackets a::after
+	display: inline-block
+	opacity: 0
+	transition: transform 0.3s, opacity 0.2s
+
+.brackets a::before
+	margin-right: 10px
+	content: '['
+	transform: translateX(20px)
+
+.brackets a::after
+	margin-left: 10px
+	content: ']'
+	transform: translateX(-20px)
+
+.brackets a:hover::before,
+.brackets a:hover::after,
+.brackets a:focus::before,
+.brackets a:focus::after
+	opacity: 1
+	transform: translateX(0px)
+
+.logos
+  display: inline-block
+  height: 30px
+  & img
+    width: 30px
+    margin-right: 20px
+
+.about-logo
+  transition: opacity .2s ease-in-out
+
+.about-logo:hover
+  opacity: .4
+
+.about-skills
+  display: block
+  max-width: 420px
+  border: 2px solid $pink
+
+.skills
+  padding: 20px
+  top: 50%
+  list-style: none
+  & li
+    padding: 10px 0
+    & span
+      text-decoration: underline
+.aboutsk
+  margin: 0 auto

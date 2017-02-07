@@ -1,0 +1,65 @@
+@import 'src/global/variables.sass'
+
+aside
+  position: fixed
+  z-index: 2000
+  width: $menuSize
+  height: 100vh
+  background: $white
+  text-align: center
+  border-right: 1px solid $lightgrey
+
+.aside-text
+  position: absolute
+  bottom: 140px
+  left: 50%
+  color: $grey
+  text-decoration: none
+  white-space: nowrap
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg)
+  @include fluid-type(font-size, 800px, 1366px, 14px, 17px)
+  & strong
+    color: $black
+    &::selection
+      color: $pink
+  & a
+      color: $grey
+      text-decoration: none
+      &:hover
+        color: $pink
+      &::selection
+        color: $pink
+  &::after
+    content: ' ¬ Front end & UX'
+
+.aside-symbol::selection
+  color: $pink
+
+.language
+  display: inline-block
+  margin: 15px auto
+  font-size: 15px
+  cursor: pointer
+  &:hover
+    color: $pink
+  &::selection
+    color: $pink
+
+.aside-links
+  position: absolute
+  top: 90px
+  left: 50%
+  color: $pink
+  text-decoration: none
+  white-space: nowrap
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg)
+  @include fluid-type(font-size, 800px, 1366px, 14px, 16px)
+  &::selection
+    color: $pink
+  & strong
+    color: $black
+  & a
+      color: $black
+      text-decoration: none
+      &:hover
+        color: $pink
