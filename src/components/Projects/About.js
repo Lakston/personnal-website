@@ -43,7 +43,7 @@ export default class About extends React.Component {
                     <li><strong>Javascript :</strong> React, Angular, jQuery, es6/es7, mobX, Modernizr</li>
                     <li><strong>Web :</strong> HTML, CSS, Pug, Sass, Boostrap, Foundation</li>
                     <li><strong>Dev Tools : </strong>Git, Webpack, Gulp, Babel, esLint</li>
-                    <li><strong>Softwares : </strong>Photoshop, Illustrator, Atom, iTerm</li>
+                    <li><strong>Softwares : </strong>Photoshop, Illustrator, Sketch, Atom, iTerm</li>
                   </ul>
                 </div>
             </section>
@@ -74,7 +74,7 @@ export default class About extends React.Component {
                                     <li><strong>Javascript:</strong> React, Angular, jQuery, es6/es7, mobX, Modernizr</li>
                                     <li><strong>Web :</strong> HTML, CSS, Pug, Sass, Boostrap, Foundation</li>
                                     <li><strong>Dev Tools: </strong>Webpack, Gulp, Babel, esLint, cssComb</li>
-                                    <li><strong>Softwares: </strong>Photoshop, Illustrator, Atom</li>
+                                    <li><strong>Softwares: </strong>Photoshop, Illustrator, Sketch, Atom, iTerm</li>
                                   </ul>
                                 </div>
                               </section>
