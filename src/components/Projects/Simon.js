@@ -24,7 +24,7 @@ export default class Simon extends React.Component {
         <div className='project' >
         {store.language === 'FR' ?
           <main className='wrapper'>
-            <h1 className='title'>{store.Simon.Name}</h1>
+            <h1 className='title'>{store.Simon.Name}<span className='title--dot'>.</span></h1>
             <Badges store={store} project='Simon' />
             <section className='section-first'>
               <p>Simon est un jeu développé en Javascript et jQuery. </p>

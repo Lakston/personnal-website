@@ -29,7 +29,7 @@ export default class LiveSearch extends React.Component {
         <div className='project' >
           {store.language === 'FR' ?
             <main className='wrapper'>
-              <h1 className='title'>{store.LiveSearch.Name}</h1>
+              <h1 className='title'>{store.LiveSearch.Name}<span className='title--dot'>.</span></h1>
               <Badges store={store} project='LiveSearch' />
               <section className='section-first'>
                 <p>Cette application web execute des recherches sur Wikipedia et affiche un résumé des 10 résultats les plus pertinents ou si l'utilisateur le désire, un article au hasard.</p>

@@ -25,7 +25,7 @@ export default class TwitchViewer extends React.Component {
         <div className='project' >
         {store.language === 'FR' ?
           <main className='wrapper'>
-            <h1 className='title'>{store.TwitchViewer.Name}</h1>
+            <h1 className='title'>{store.TwitchViewer.Name}<span className='title--dot'>.</span></h1>
             <Badges store={store} project='TwitchViewer' />
             <section className='section-first'>
               <p>Cette application web utilise l'API de Twitch.tv pour afficher une liste d'utilisateurs et leur status (hors-ligne, en-ligne et streaming). Des liens vers les profils et les stream en direct des utilisateurs sont crées pour permettre aux utilisateurs d'avoir toutes les informations et liens dont ils ont besoin.</p>

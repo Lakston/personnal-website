@@ -29,7 +29,7 @@ export default class Leaderboard extends React.Component {
         <div className='project' >
         {store.language === 'FR' ?
           <main className='wrapper'>
-            <h1 className='title'>{store.Leaderboard.Name}</h1>
+            <h1 className='title'>{store.Leaderboard.Name}<span className='title--dot'>.</span></h1>
             <Badges store={store} project='Leaderboard' />
             <section className='section-first'>
               <p>Ce leaderboard utilise l'API de FreeCodeCamp pour créer une représentation de l'activité des utilisateurs. Une fois la reqête Ajax effectuée les données sont mise en page via React et Boostrap.</p>

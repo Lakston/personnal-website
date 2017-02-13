@@ -38,7 +38,7 @@ export default class Lakston extends React.Component {
         <div className='project' >
         {store.language === 'FR' ?
           <main className='wrapper'>
-            <h1 className='title'>{store.Lakston.Name}</h1>
+            <h1 className='title'>{store.Lakston.Name}<span className='title--dot'>.</span></h1>
             <Badges store={store} project='Lakston' />
             <section className='section-first'>
               <p>{ store.Lakston.Text_1_fr }</p>
