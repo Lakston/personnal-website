@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --inline --hot --config webpack.config.dev.js --host 0.0.0.0",
-    "deploy": "git subtree push --prefix build origin gh-pages"
+    "clean": "rm -rf dist/*",
+    "release": "npm run clean && npm run build",
+    "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push"
   },
   "author": "Fabrice Pomata",
   "license": "MIT",
