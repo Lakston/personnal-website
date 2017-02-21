@@ -65,7 +65,7 @@ export default class Portfolio extends React.Component {
             </section> */}
           </main>
           :                 <main className='wrapper'>
-                              <h1 className='title'>{store.Portfolio.Name}</h1>
+                              <h1 className='title'>{store.Portfolio.Name}<span className='title--dot'>.</span></h1>
                               <Badges store={store} project='Portfolio' isMobile={true} />
                               <section className='section-first'>
                                 <p>{ store.Portfolio.Text_1_en }</p>

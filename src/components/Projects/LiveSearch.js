@@ -51,7 +51,7 @@ export default class LiveSearch extends React.Component {
 
           </main>
           :                 <main className='wrapper'>
-                              <h1 className='title'>{store.LiveSearch.Name}</h1>
+                              <h1 className='title'>{store.LiveSearch.Name}<span className='title--dot'>.</span></h1>
                               <Badges store={store} project='LiveSearch' />
                               <section className='section-first'>
                                 <p>This LiveSearch uses the FreeCodeCamp API to create a visual representation of its users activity.</p>

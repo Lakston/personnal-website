@@ -58,7 +58,7 @@ export default class Leaderboard extends React.Component {
 
           </main>
           :                 <main className='wrapper'>
-                              <h1 className='title'>{store.Leaderboard.Name}</h1>
+                              <h1 className='title'>{store.Leaderboard.Name}<span className='title--dot'>.</span></h1>
                               <Badges store={store} project='Leaderboard' />
                               <section className='section-first'>
                                 <p>This Leaderboard uses the FreeCodeCamp API to create a visual representation of its users activity. Once the Ajax request is successfull the data is presented via React and Boostrap.</p>

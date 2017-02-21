@@ -27,7 +27,7 @@ export default class Simon extends React.Component {
             <h1 className='title'>{store.Simon.Name}<span className='title--dot'>.</span></h1>
             <Badges store={store} project='Simon' />
             <section className='section-first'>
-              <p>Simon est un jeu développé en Javascript et jQuery. </p>
+              <p>Simon est une réplique du jeu de société des années 80 développé en Javascript et jQuery. </p>
             </section>
 
             <img
@@ -36,7 +36,7 @@ export default class Simon extends React.Component {
               ${imgMed} 1000w,
               ${img}  1600w`}
               className='project-ss'
-              alt='computer' />
+              alt='Simon game' />
 
             <section  className='section-second'>
               <h2>Un design responsive et facilement modifiable</h2>
@@ -48,19 +48,19 @@ export default class Simon extends React.Component {
             </section>
           </main>
           :                 <main className='wrapper'>
-                              <h1 className='title'>{store.Simon.Name}</h1>
+                              <h1 className='title'>{store.Simon.Name}<span className='title--dot'>.</span></h1>
                               <Badges store={store} project='Simon' isMobile={true} />
                               <section className='section-first'>
-                                <p>{ store.Simon.Text_1_en }</p>
+                                <p>Simon is a replica of the 80's game developped in Javascript and jQuery.</p>
                               </section>
 
                               <img
-                                src="src/assets/projects/simon-main-med.png"
-                                srcSet="src/assets/projects/simon-main-sma.png 600w,
-                                src/assets/projects/simon-main-med.png 960w,
-                                src/assets/projects/simon-main.png 1600w"
+                                src={imgMed}
+                                srcSet={`${imgSma} 550w,
+                                ${imgMed} 1000w,
+                                ${img}  1600w`}
                                 className='project-ss'
-                                alt='computer' />
+                                alt='Simon game' />
 
                               <section  className='section-second'>
                                 <h2>Easily customizable and responsive design</h2>
