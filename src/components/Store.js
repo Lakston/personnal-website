@@ -123,7 +123,7 @@ class AppStore {
             Next: '/portfolio',
             Prev: '/simon',
             Project: 7,
-            Text_1_fr: 'Je suis un développeur Front-End et designeur UI/UX. Après 10 ans de Freelance, je cherche maintenant un poste de développeur dans une agence soit en tant que travailleur à distance, soit sur place.',
+            Text_1_fr: 'Je suis un développeur Front-End et designeur UI/UX. je cherche un poste de développeur dans une agence soit en tant que travailleur à distance, soit sur place.',
             Text_1_en: 'I am a Front-End Developer and UI/UX designer. After 10 years of Freelance work I am now looking for a full time position in an agency as a remote worker or on site.',
             Text_2_fr: 'Constamment en train d\'apprendre pour devenir un meilleur développeur. Passioné de voyage, j\'ai passé beaucoup de temps à l\'étranger, Japon, Corée, Australie, Canada... Je vais où mes passions du web et de la photo me portent. ',
             Text_2_en: 'Constantly learning to become a better developper, and a better person. In love with travel, I spent a lot of time abroad, Japan, Korea, Australia, Canada... I\'ll go where my passions of the web and photography will take me. I am also a music lover, an avid coffee drinker, and I love the oxford comma.',

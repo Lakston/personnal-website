@@ -105,12 +105,6 @@ h2 img
   margin-bottom: $projectMarginBig
   @include fluid-type(font-size, 320px, 1000px, 25px, 32px)
 
-.links-wrap
-  position: relative
-  display: block
-  width: 100%
-  margin-bottom: $projectMarginBig
-
 .wrapper .contact
   position: relative
   display: block
@@ -119,14 +113,17 @@ h2 img
   color: $pink
   text-decoration: none
   text-align: right
+  margin-bottom: $projectMarginMed
 
 .email
+  padding: 20px
   color: $grey
 
 .brackets
   display: inline-block
-  float: right
+  text-align: right
   line-height: 30px
+  width: 100%
 
 .brackets a::before,
 .brackets a::after
@@ -151,31 +148,47 @@ h2 img
 	opacity: 1
 	transform: translateX(0px)
 
-.logos
-  display: inline-block
-  height: 30px
-  & img
-    width: 30px
-    margin-right: 20px
 
 .about-logo
   transition: opacity .2s ease-in-out
+  vertical-align: middle
+
+.about-flex
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  align-items: center
+  align-content: space-between
+
+.logos
+  display: inline-block
+  height: 30px
+  padding: 40px 0
+  & a
+    text-decoration: none
+  & img
+    width: 25px
+    margin-left: 20px
+
+.about-skills
+  // order: 2
+
+.about-cv
+  cursor: pointer
+  margin: 40px
+
+.cv-button
+  border-radius: 10px
+  color: #ffffff
+  font-size: 20px
+  background: #f63249
+  padding: 20px 30px 20px 30px
+  text-decoration: none
 
 .about-logo:hover
   opacity: .4
 
-.about-skills
-  display: block
-  max-width: 420px
-  border: 2px solid $pink
-
 .skills
-  padding: 20px
-  top: 50%
   list-style: none
   & li
     padding: 10px 0
-    & span
-      text-decoration: underline
-.aboutsk
-  margin: 0 auto
