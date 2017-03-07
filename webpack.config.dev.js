@@ -53,6 +53,10 @@ module.exports = {
         query: {
           attrs: ['link:href'],
         }
+      },
+      {
+        test: /\.pdf$/,
+        loader: 'file?name=[path][name].[ext]'
       }
     ]
   },

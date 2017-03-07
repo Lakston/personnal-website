@@ -118,6 +118,7 @@ h2 img
 .email
   padding: 20px
   color: $grey
+  cursor: pointer
 
 .brackets
   display: inline-block
@@ -163,7 +164,7 @@ h2 img
 .logos
   display: inline-block
   height: 30px
-  padding: 40px 0
+  padding: 0 0 50px 0
   & a
     text-decoration: none
   & img
@@ -171,11 +172,14 @@ h2 img
     margin-left: 20px
 
 .about-skills
-  // order: 2
+  flex-grow: 1
+  padding-left: 5%
 
 .about-cv
   cursor: pointer
   margin: 40px
+  flex-grow: 1
+  text-align: center
 
 .cv-button
   border-radius: 10px
@@ -184,6 +188,8 @@ h2 img
   background: #f63249
   padding: 20px 30px 20px 30px
   text-decoration: none
+  & span
+    color: #ffffff
 
 .about-logo:hover
   opacity: .4
