@@ -37,7 +37,7 @@ export default class About extends React.Component {
               <section  className='section-third about-flex'>
                 <div className='about-skills'>
                   <div className='logos'>
-                    <strong>Liens : </strong>
+                    <strong>Links : </strong>
                     <a href='https://github.com/Lakston' target='_blank'><img className='about-logo' src={github} alt='github logo'/> github</a>
                     <a href='https://codepen.io/Lakston/' target='_blank'><img className='about-logo' src={codepen} alt='codepen logo'/> codepen</a>
                   </div>
@@ -61,28 +61,29 @@ export default class About extends React.Component {
                               </section>
 
                               <section  className='section-second'>
-
-                                <div className='links-wrap'>
-                                  <div className='logos'>
-                                    <a href='https://github.com/Lakston' target='_blank'><img className='about-logo' src='src/assets/github.svg' alt='github logo'/></a>
-                                    <a href='https://codepen.io/Lakston/' target='_blank'><img className='about-logo' src='src/assets/codepen.svg' alt='codepen logo'/></a>
-                                  </div>
                                   <div className='brackets'>
                                     <a className="contact" href="mailto:fab.pomata@gmail.com"><span className='email'>fab.pomata@gmail.com</span></a>
                                   </div>
-                                </div>
                               </section>
 
-                              <section  className='section-third aboutsk'>
+                              <section  className='section-third about-flex'>
                                 <div className='about-skills'>
+                                  <div className='logos'>
+                                    <strong>Liens : </strong>
+                                    <a href='https://github.com/Lakston' target='_blank'><img className='about-logo' src={github} alt='github logo'/> github</a>
+                                    <a href='https://codepen.io/Lakston/' target='_blank'><img className='about-logo' src={codepen} alt='codepen logo'/> codepen</a>
+                                  </div>
                                   <ul className='skills'>
-                                    <li><strong>Javascript:</strong> React, Angular, jQuery, es6/es7, mobX, Modernizr</li>
+                                    <li><strong>Javascript :</strong> React, Angular, jQuery, es6/es7, mobX, Modernizr</li>
                                     <li><strong>Web :</strong> HTML, CSS, Pug, Sass, Boostrap, Foundation</li>
-                                    <li><strong>Dev Tools: </strong>Webpack, Gulp, Babel, esLint, cssComb</li>
-                                    <li><strong>Softwares: </strong>Photoshop, Illustrator, Sketch, Atom, iTerm</li>
+                                    <li><strong>Dev Tools : </strong>Git, Webpack, Gulp, Babel, esLint</li>
+                                    <li><strong>Softwares : </strong>Photoshop, Illustrator, Sketch, Atom, iTerm</li>
                                   </ul>
                                 </div>
-                              </section>
+                                <div className='about-cv'>
+                                  <a className='cv-button' href={CVFr} download="Fabrice_Pomata_CV_Fr"><span>Download a Resume</span></a>
+                                </div>
+                            </section>
                         </main>}
       </div>
       <Media query={{orientation: 'portrait'}}>
