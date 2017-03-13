@@ -111,7 +111,7 @@ class AppStore {
             Header: '06',
             Type : 'Javascript App',
             Role: 'Dev & Design',
-            Tech: ['Jade', 'Sass', 'jQuery', 'Gulp'],
+            Tech: ['Pug', 'Sass', 'jQuery', 'Gulp'],
             Next: '/about',
             Prev: '/twitchviewer',
             extLinks:[{ link: 'https://codepen.io/Lakston/pen/grvway/', text: 'Codepen'}, {link: 'https://github.com/Lakston/simon-game', text: 'Github'}],

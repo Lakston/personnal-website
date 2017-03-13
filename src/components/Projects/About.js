@@ -38,7 +38,7 @@ export default class About extends React.Component {
               <section  className='section-third about-flex'>
                 <div className='about-skills'>
                   <div className='logos'>
-                    <strong>Links : </strong>
+                    <strong>Liens : </strong>
                     <a href='https://github.com/Lakston' target='_blank'><img className='about-logo' src={github} alt='github logo'/> github</a>
                     <a href='https://codepen.io/Lakston/' target='_blank'><img className='about-logo' src={codepen} alt='codepen logo'/> codepen</a>
                   </div>
@@ -70,7 +70,7 @@ export default class About extends React.Component {
                               <section  className='section-third about-flex'>
                                 <div className='about-skills'>
                                   <div className='logos'>
-                                    <strong>Liens : </strong>
+                                    <strong>Links : </strong>
                                     <a href='https://github.com/Lakston' target='_blank'><img className='about-logo' src={github} alt='github logo'/> github</a>
                                     <a href='https://codepen.io/Lakston/' target='_blank'><img className='about-logo' src={codepen} alt='codepen logo'/> codepen</a>
                                   </div>
