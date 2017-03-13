@@ -50,7 +50,7 @@ export default class About extends React.Component {
                   </ul>
                 </div>
                 <div className='about-cv'>
-                  <a className='cv-button' href={CVFr} download="Fabrice_Pomata_CV_Fr"><span>Télécharger un CV</span></a>
+                  <a className='cv-button' href={CVFr}><span>Télécharger un CV</span></a>
                 </div>
             </section>
 
@@ -82,7 +82,7 @@ export default class About extends React.Component {
                                   </ul>
                                 </div>
                                 <div className='about-cv'>
-                                  <a className='cv-button' href={CVEn} download="Fabrice_Pomata_CV_En"><span>Download a Resume</span></a>
+                                  <a className='cv-button' href={CVEn}><span>Download a Resume</span></a>
                                 </div>
                             </section>
                         </main>}
