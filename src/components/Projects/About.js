@@ -9,6 +9,7 @@ import SwitcherPor from './_common/SwitcherPor'
 import codepen from '../../assets/codepen.svg'
 import github from '../../assets/github.svg'
 import CVFr from '../../assets/Fabrice_Pomata_CV_Fr.pdf'
+import CVEn from '../../assets/Fabrice_Pomata_CV_En.pdf'
 
 import './project.sass'
 
@@ -81,7 +82,7 @@ export default class About extends React.Component {
                                   </ul>
                                 </div>
                                 <div className='about-cv'>
-                                  <a className='cv-button' href={CVFr} download="Fabrice_Pomata_CV_Fr"><span>Download a Resume</span></a>
+                                  <a className='cv-button' href={CVEn} download="Fabrice_Pomata_CV_En"><span>Download a Resume</span></a>
                                 </div>
                             </section>
                         </main>}
