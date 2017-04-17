@@ -9,7 +9,8 @@ import Aside from './components/Aside/Aside'
 import AsidePor from './components/Aside/AsidePor'
 import NoMatch from './components/Utilities/NoMatch'
 import Portfolio from './components/Projects/Portfolio'
-import Leaderboard from './components/Projects/Leaderboard'
+// import Leaderboard from './components/Projects/Leaderboard'
+import DataChoro from './components/Projects/data_project'
 import Lakston from './components/Projects/Lakston'
 import LiveSearch from './components/Projects/LiveSearch'
 import TwitchViewer from './components/Projects/TwitchViewer'
@@ -31,7 +32,8 @@ const Main = () => (
         <Match exactly pattern='/' component={ App } />
         <Match  pattern='/portfolio'  component={ Portfolio } />
         <Match  pattern='/lakston'  component={ Lakston }  onUpdate={() => window.scrollTo(0, 0)}/>
-        <Match  pattern='/leaderboard'  component={ Leaderboard } />
+        {/* <Match  pattern='/leaderboard'  component={ Leaderboard } /> */}
+        <Match  pattern='/datachoro'  component={ DataChoro } />
         <Match  pattern='/livesearch'  component={ LiveSearch } />
         <Match  pattern='/twitchviewer'  component={ TwitchViewer } />
         <Match  pattern='/simon'  component={ Simon } />

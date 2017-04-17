@@ -45,7 +45,7 @@ export default class Portfolio extends React.Component {
               alt='portfolio presentation' />
               <section  className='section-second'>
                 <h2><img src={check} alt='check mark'/> Site bilingue</h2>
-                <p>La possibilité de changer de langue était très importante, j'ai donc développé un composant React qui va chercher les données via mobX suivant la langue qu'a choisit l'utilisateur. L'avantage de React pour ce cas de figure est qu'on ne recharge pas la page lorsqu'on change la langue, le texte est simplement remplacé avec un gain évident tant niveau performance que pour l'expérience utilisateur.</p>
+                <p>La possibilité de changer de langue était très importante, j'ai donc développé un composant React qui va chercher les données via mobX suivant la langue qu'a choisit l'utilisateur. L'avantage de React pour ce cas de figure est qu'on ne recharge pas la page lorsqu'on change la langue, le texte est simplement remplacé avec un gain évident tant niveau performance que pour l'expérience utilisateur, le tout sans nécéssiter de base de donnée.</p>
               </section>
               <section  className='section-third'>
                 <h2><img src={check} alt='check mark'/> Design Responsive</h2>
@@ -58,11 +58,6 @@ export default class Portfolio extends React.Component {
                   className='project-ss'
                   alt='responsive design example' />
               </section>
-            {/* <section  className='section-third'>
-              <h2 className='project-ss'><img src={check} alt='check mark'/> Mode plein écran</h2>
-              <p>Avec navigation à la souris ou au clavier. Une première option pour voir les images pleine résolution et aussi un vrai mode plein écran.</p>
-
-            </section> */}
           </main>
           :                 <main className='wrapper'>
                               <h1 className='title'>{store.Portfolio.Name}<span className='title--dot'>.</span></h1>
@@ -80,7 +75,7 @@ export default class Portfolio extends React.Component {
                                 alt='portfolio presentation' />
                                 <section  className='section-second'>
                                   <h2><img src={check} alt='check mark'/> Bilingual website</h2>
-                                  <p>It was very important to add the possibility to change the language so I developed a React component that will fetch the language data via mobX depending on the user's choice. The advantage of React in this case is that the website will not reload when changing the language, the text is simply replaced which is a big performance gain and makes the user experience much better.</p>
+                                  <p>It was very important to add the possibility to change the language so I developed a React component that will fetch the language data via mobX depending on the user's choice. The advantage of React in this case is that the website will not reload when changing the language, the text is simply replaced in the view for a big performance gain and makes for a better user experience; and without using a database.</p>
                                 </section>
                                 <section  className='section-third'>
                                   <h2><img src={check} alt='check mark'/> Responsive Design</h2>

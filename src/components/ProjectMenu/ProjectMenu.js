@@ -50,7 +50,6 @@ export default class ProjectMenu extends React.Component {
                 header={project.header}
                 icon={project.icon}
                 id={i+1}
-                image={project.image}
                 isActive={this.props.store.currentProject  === i + 1 ? true : false}
                 link={project.link}
                 name={this.props.store.language === 'FR' ? project.nom : project.name}

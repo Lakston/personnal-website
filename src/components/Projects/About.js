@@ -43,9 +43,9 @@ export default class About extends React.Component {
                     <a href='https://codepen.io/Lakston/' target='_blank'><img className='about-logo' src={codepen} alt='codepen logo'/> codepen</a>
                   </div>
                   <ul className='skills'>
-                    <li><strong>Javascript :</strong> React, Angular, jQuery, es6/es7, mobX, Modernizr</li>
-                    <li><strong>Web :</strong> HTML, CSS, Pug, Sass, Boostrap, Foundation</li>
-                    <li><strong>Dev Tools : </strong>Git, Webpack, Gulp, Babel, esLint</li>
+                    <li><strong>Javascript : </strong>React, Angular, D3, jQuery, es6/es7, mobX, AJAX, JSON, mobX</li>
+                    <li><strong>Web : </strong>HTML, CSS, Pug, Sass, Boostrap, Foundation</li>
+                    <li><strong>Dev Tools : </strong>Webpack, Gulp, Babel, npm, Yarn, esLint, Git, Github</li>
                     <li><strong>Softwares : </strong>Photoshop, Illustrator, Sketch, Atom, iTerm</li>
                   </ul>
                 </div>
@@ -75,9 +75,9 @@ export default class About extends React.Component {
                                     <a href='https://codepen.io/Lakston/' target='_blank'><img className='about-logo' src={codepen} alt='codepen logo'/> codepen</a>
                                   </div>
                                   <ul className='skills'>
-                                    <li><strong>Javascript :</strong> React, Angular, jQuery, es6/es7, mobX, Modernizr</li>
-                                    <li><strong>Web :</strong> HTML, CSS, Pug, Sass, Boostrap, Foundation</li>
-                                    <li><strong>Dev Tools : </strong>Git, Webpack, Gulp, Babel, esLint</li>
+                                    <li><strong>Javascript : </strong>React, Angular, D3, jQuery, es6/es7, mobX, AJAX, JSON, mobX</li>
+                                    <li><strong>Web : </strong> HTML, CSS, Pug, Sass, Boostrap, Foundation</li>
+                                    <li><strong>Dev Tools : </strong>Webpack, Gulp, Babel, npm, Yarn, esLint, Git, Github</li>
                                     <li><strong>Softwares : </strong>Photoshop, Illustrator, Sketch, Atom, iTerm</li>
                                   </ul>
                                 </div>

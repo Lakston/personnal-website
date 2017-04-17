@@ -21,10 +21,10 @@ class AppStore {
                                               link: 'lakston'
                                             },
                                             {
-                                              name: 'Leaderboard',
-                                              nom: 'Leaderboard',
+                                              name: 'D3 Choropleth',
+                                              nom: 'D3 Choroplète',
                                               header: '3',
-                                              link: 'leaderboard'
+                                              link: 'datachoro'
                                             },
                                             {
                                               name: 'Live Search',
@@ -68,22 +68,34 @@ class AppStore {
             Type : 'Website',
             Role: 'Dev & Design',
             Tech: ['React', 'MobX', 'React-Router', 'Webpack'],
-            Next: '/leaderboard',
+            Next: '/datachoro',
             Prev: '/portfolio',
             extLinks:[{ link: 'http://lakston.tk', text: 'Lakston.tk'}, {link: 'https://github.com/Lakston/Lakston', text: 'Github'}],
             Project: 2
             }
-@observable Leaderboard = {
-            Name: 'Leaderboard',
-            Header: '03',
-            Type : 'React App',
+// @observable Leaderboard = {
+//             Name: 'Leaderboard',
+//             Header: '03',
+//             Type : 'React App',
+//             Role: 'Dev & Design',
+//             Tech: ['React', 'Fetch', 'Webpack', 'Bootstrap'],
+//             Next: '/datachoro',
+//             Prev: '/lakston',
+//             extLinks:[{ link: 'https://codepen.io/Lakston/pen/kkaxvB', text: 'Codepen'}, {link: 'https://github.com/Lakston/React-leaderboard', text: 'Github'}],
+//             Project: 3
+//           }
+// }
+@observable DataChoro = {
+            Name: 'Choropleth map',
+            Header: '04',
+            Type : 'Web App',
             Role: 'Dev & Design',
-            Tech: ['React', 'Fetch', 'Webpack', 'Bootstrap'],
+            Tech: ['D3', 'TopoJSON', 'Webpack', 'Yarn'],
             Next: '/livesearch',
             Prev: '/lakston',
-            extLinks:[{ link: 'https://codepen.io/Lakston/pen/kkaxvB', text: 'Codepen'}, {link: 'https://github.com/Lakston/React-leaderboard', text: 'Github'}],
+            extLinks:[{link: 'https://github.com/Lakston/d3-choropleth-map-education', text: 'Github'}, {link: 'https://lakston.github.io/d3-choropleth-map-education/', text: 'Github Live'}],
             Project: 3
-          }
+}
 @observable LiveSearch = {
             Name: 'LiveSearch',
             Header: '04',
@@ -91,10 +103,10 @@ class AppStore {
             Role: 'Dev & Design',
             Tech: ['Angular', 'Gulp'],
             Next: '/twitchviewer',
-            Prev: '/leaderboard',
+            Prev: '/datachoro',
             extLinks:[{ link: 'https://codepen.io/Lakston/pen/bpOZRY', text: 'Codepen'}, {link: 'https://github.com/Lakston/Wikipedia-Live-Search', text: 'Github'}],
             Project: 4
-          }
+}
 @observable TwitchViewer = {
             Name: 'Twitch Viewer',
             Header: '05',
@@ -102,7 +114,7 @@ class AppStore {
             Role: 'Dev & Design',
             Tech: ['Angular', 'Gulp', 'Bootstrap'],
             Next: '/simon',
-            Prev: '/livesearch',
+            Prev: '/datachoro',
             extLinks:[{ link: 'https://codepen.io/Lakston/pen/bpZVGe', text: 'Codepen'}, {link: 'https://github.com/Lakston/angular-twitch-viewer', text: 'Github'}],
             Project: 5
           }

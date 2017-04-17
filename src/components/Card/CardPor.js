@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router'
+import store from '../Store'
 
 import './CardPor.sass'
 
@@ -27,7 +28,7 @@ const Card = ({ handleClick, header, style, isActive, name, id, link }) => (
             <svg className='next-svg-por' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 81.4 81.4" enableBackground="new 0 0 81.4 81.4">
               <rect className='outer' x="12.9" y="12.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -16.8972 40.6348)" fill="#F74765" stroke="#F74765" strokeWidth="2" strokeMiterlimit="10" width="55.5" height="55.5"/> <polyline className='inner' fill="none" stroke="#F74765" strokeWidth="2" strokeMiterlimit="10" points="40.7,20.5 60.8,40.7 40.7,60.8 "/>
             </svg>
-
+            <div className='card-view-project-por'>{store.language === 'FR' ? 'Voir le projet' : 'View project'}</div>
           </div>
           </Link> :
           <div className='card-link-outer-por'>
