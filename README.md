@@ -1,4 +1,4 @@
-# Fbarice Pomata personal portfolio
+# Fabrice Pomata personal portfolio
 
 Personal portfolio developed with [React](https://facebook.github.io/react/) and [MobX](https://github.com/mobxjs/mobx).
 
