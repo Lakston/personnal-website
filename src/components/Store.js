@@ -112,10 +112,10 @@ class AppStore {
             Header: '05',
             Type : 'Web App',
             Role: 'Dev & Design',
-            Tech: ['Angular', 'Gulp', 'Bootstrap'],
+            Tech: ['Angular', 'Angular CLI', 'Bootstrap', 'Twitch API'],
             Next: '/simon',
             Prev: '/datachoro',
-            extLinks:[{ link: 'https://codepen.io/Lakston/pen/bpZVGe', text: 'Codepen'}, {link: 'https://github.com/Lakston/angular-twitch-viewer', text: 'Github'}],
+            extLinks:[{ link: 'https://lakston.github.io/angular-twitch-viewer/', text: 'Live version'}, {link: 'https://github.com/Lakston/angular-twitch-viewer', text: 'Github'}],
             Project: 5
           }
 @observable Simon = {
