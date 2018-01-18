@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --inline --hot --config webpack.config.dev.js --host 0.0.0.0",
+    "dev":
+      "webpack-dev-server --inline --hot --config webpack.config.dev.js --host 0.0.0.0",
     "deploy": "gh-pages-deploy"
   },
   "gh-pages-deploy": {
@@ -15,15 +16,20 @@
   "author": "Fabrice Pomata",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@types/jest": "^22.0.1",
+    "@types/react": "^16.0.34",
+    "@types/react-dom": "^16.0.3",
+    "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.9",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^3.4.2",
     "jest": "^22.1.2",
+    "node-sass": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^3.1.3",
